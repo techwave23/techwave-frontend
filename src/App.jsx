@@ -1,11 +1,13 @@
-import './App.css';
+import { useState } from "react";
+import "./styles/App.css";
+import Home from "./pages/Home";
 
 function App() {
+	const [count, setCount] = useState(0);
+
 	return (
-		<div className='App'>
-			<h2>Proximamente</h2>
-			<h1>TechWave</h1>
-			<p>Ride the Wave</p>
+		<div className="App">
+			<Home />
 		</div>
 	);
 }
