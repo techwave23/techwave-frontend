@@ -1,5 +1,62 @@
 :root {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 16px;
+
+
+  --backround: hsl(272, 37%, 7%);
+  --pink-50: hsl(270, 38%, 12%);
+  --pink-100: hsl(270, 40%, 16%);
+  --pink-200: hsl(270, 45%, 24%);
+  --pink-500: hsl(270, 60%, 52%);
+  --white: white;
+  --gray: rgb(175, 175, 175);
+ /*  
+ ESTILOS DE COLORES PARA FONDOS Y BOTONES
+ 
+  background: linear-gradient(90deg, var(--backround), var(--pink-100));
+ 
+  .button-hightlight { 
+  border-radius: 0.5rem;
+  padding: 15px 45px;
+  color: var(--white);
+  font-weight: 600;
+  font-size: 16px;
+  border: none;
+  box-shadow: rgb(0 0 0 / 4%) 0px 0px 24px;
+  background: linear-gradient(76.35deg, rgb(128, 26, 230) 15.89%, rgb(162, 26, 230) 89.75%);
+  cursor: pointer;
+  margin-top: 36px;
+}
+
+.button-hightlight:hover {
+  background: linear-gradient(76.35deg, rgb(90, 13, 167) 15.89%, rgb(123, 9, 179) 89.75%);
+
+} 
+
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  flex-grow: 1;
+  align-items: flex-start;
+  padding: 35px;
+  margin: 35px;
+  background-color: #13111c;
+  width: 200px;
+  min-height: 200px;
+  border-radius: 0.75rem;
+  border: 1px solid var(--pink-500);
+  box-shadow: var(--pink-100) 0px 4px 24px;
+  cursor: pointer;
+
+}
+.card:hover {
+  box-shadow: var(--pink-200) 0px 4px 24px;
+}
+ 
+ */
+
+ 
 }
 
