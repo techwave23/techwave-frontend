@@ -1,0 +1,48 @@
+/*   
+ ESTILOS DE COLORES PARA FONDOS Y BOTONES
+ 
+  background: linear-gradient(90deg, var(--backround), var(--pink-100)); */
+ 
+  .button-hightlight { 
+  border-radius: 0.5rem;
+  padding: 15px 45px;
+  color: var(--white);
+  font-weight: 600;
+  font-size: 16px;
+  border: none;
+  box-shadow: rgb(0 0 0 / 4%) 0px 0px 24px;
+  background: linear-gradient(76.35deg, rgb(128, 26, 230) 15.89%, rgb(162, 26, 230) 89.75%);
+  cursor: pointer;
+  margin-top: 36px;
+}
+
+.button-hightlight:hover {
+  background: linear-gradient(76.35deg, rgb(90, 13, 167) 15.89%, rgb(123, 9, 179) 89.75%);
+} 
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  flex-grow: 1;
+  align-items: center;
+  padding: 35px;
+  margin: 35px;
+  background-color: #13111c;
+  width: 200px;
+  min-height: 200px;
+  border-radius: 0.75rem;
+  border: 1px solid var(--pink-500);
+  box-shadow: var(--pink-100) 0px 4px 24px;
+  cursor: pointer;
+}
+
+.card-container:hover {
+  box-shadow: var(--pink-200) 0px 4px 24px;
+}
+
+.card-text {
+    margin-top: 20px;
+    color: var(--white);
+}
+ 

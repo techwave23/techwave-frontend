@@ -1,0 +1,4 @@
+.projects-container {
+  background: linear-gradient(90deg, var(--backround), var(--pink-100));
+  padding: 20px;
+}
