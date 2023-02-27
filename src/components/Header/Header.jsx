@@ -8,7 +8,7 @@ const Header = () => {
 		<header>
 			<img src={logo} draggable='false' alt='logo' className='header-logo' />
 
-			<nav>
+			<nav className='nav-container'>
 				<NavLink to='/' className='nav-link'>
 					Home
 				</NavLink>
