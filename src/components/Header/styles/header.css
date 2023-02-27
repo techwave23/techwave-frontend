@@ -1,9 +1,14 @@
 header {
-    background-color: var(--backround);
+    background-color: var(--backround), 0.8;
     display: grid;
    grid-template-columns: 2fr 1fr;
     align-items: center;
     padding: 26px;
+    backdrop-filter: blur(2px);
+    position: sticky;
+    top: 0px;
+   
+    backdrop-filter: blur(8px);
 }
 
 .header-logo {

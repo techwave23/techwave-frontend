@@ -6,6 +6,10 @@ const Home = () => {
 	return (
 		<div className='container'>
 			<img src={background} alt='background' />
+			<img src={background} alt='background' />
+			<img src={background} alt='background' />
+			<img src={background} alt='background' />
+			<img src={background} alt='background' />
 		</div>
 	);
 };
