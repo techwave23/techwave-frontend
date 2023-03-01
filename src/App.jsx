@@ -6,25 +6,26 @@ import Projects from './pages/Projects/Projects';
 import './styles/App.css';
 import { getProducts } from './services/getProducts';
 import { useFetch } from './hooks/useFetch';
+import { responseAdapter } from './adapters/adapterDemo';
 
 function App() {
-	const URL =
-		' https://strapi-production-4523.up.railway.app/api/projects?populate=*';
-	const { data, isLoading } = useFetch(URL);
-	const [count, setCount] = useState(0);
+	const [projects, setProjects] = useState([]);
+	// const URL =
+	// 	' https://strapi-production-4523.up.railway.app/api/projects?populate=*';
+	// const { data, isLoading } = useFetch(URL);
 	useEffect(() => {
 		//esta opcion haciendo la llamada y seteando que hacemos con la data desde aca!!
-		getProducts().then(response => console.log(response));
+		getProducts().then(response => setProjects(responseAdapter(response.data)));
 		//aca la opcion con el custom Hook use Fetch
-		!isLoading && console.log(data);
-	}, [isLoading]);
+		// !isLoading && cardData(data);
+	}, []);
 
 	return (
 		<div className='App'>
 			<Headers />
 			<Routes>
 				<Route path='/' element={<Home />} />
-				<Route path='/projects' element={<Projects />} />
+				<Route path='/projects' element={<Projects projects={projects} />} />
 				<Route path='/*' element={<Home />} />
 			</Routes>
 		</div>

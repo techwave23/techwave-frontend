@@ -1,16 +1,15 @@
-import React from 'react';
 import './styles/cards.css';
 import icon from '/assets/icon.svg';
 
-const Cards = () => {
+const Cards = ({ project }) => {
+	const { title, description, imageLogo, category } = project;
 	return (
 		<div className='card-container'>
-			<img src={icon} alt='' />
+			<img src={imageLogo} alt='' />
 			<div className='card-text'>
-				<p>
-					Lorem Ipsum is simply dummy text of the printing and typesetting
-					industry
-				</p>
+				<h3>{title}</h3>
+				<p>{description}</p>
+				<p>Category: {category}</p>
 			</div>
 			<button className='button-hightlight'>Ver mas</button>
 		</div>

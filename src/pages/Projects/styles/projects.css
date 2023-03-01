@@ -1,4 +1,19 @@
 .projects-container {
-  background: linear-gradient(90deg, var(--backround), var(--pink-100));
-  padding: 20px;
+  display: flex;
+ flex-direction: column;
+}
+
+.title-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: var(--white);
+}
+
+
+.projects-cards-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  padding: 50px 0px;
 }
