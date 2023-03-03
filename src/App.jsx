@@ -7,6 +7,7 @@ import './styles/App.css';
 import { getProducts } from './services/getProducts';
 import { useFetch } from './hooks/useFetch';
 import { responseAdapter } from './adapters/adapterDemo';
+import Contact from './pages/Contact/Contact';
 
 function App() {
 	const [projects, setProjects] = useState([]);
@@ -26,6 +27,7 @@ function App() {
 			<Routes>
 				<Route path='/' element={<Home />} />
 				<Route path='/projects' element={<Projects projects={projects} />} />
+				<Route path='/contact' element={<Contact />} />
 				<Route path='/*' element={<Home />} />
 			</Routes>
 		</div>

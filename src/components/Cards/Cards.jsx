@@ -1,5 +1,4 @@
 import './styles/cards.css';
-import icon from '/assets/icon.svg';
 
 const Cards = ({ project }) => {
 	const { title, description, imageLogo, category } = project;
