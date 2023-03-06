@@ -27,7 +27,7 @@ const FormContact = () => {
 					className={errors.firstName && 'error'}
 					{...register('firstName', validateForm('firstName'))}
 				/>
-				{errors.firstName && <p>{messages.firstName}</p>}
+				{errors.firstName && <p className='error-msg'>{messages.firstName}</p>}
 
 				<label htmlFor='lastName'>Last Name</label>
 				<input
@@ -37,7 +37,7 @@ const FormContact = () => {
 					className={errors.lastName && 'error'}
 					{...register('lastName', validateForm('lastName'))}
 				/>
-				{errors.lastName && <p>{messages.lastName}</p>}
+				{errors.lastName && <p className='error-msg'>{messages.lastName}</p>}
 
 				<label htmlFor='email'>Email</label>
 				<input
@@ -47,7 +47,7 @@ const FormContact = () => {
 					className={errors.email && 'error'}
 					{...register('email', validateForm('email'))}
 				/>
-				{errors.email && <p>{messages.email}</p>}
+				{errors.email && <p className='error-msg'>{messages.email}</p>}
 
 				<label htmlFor='phone'>Phone</label>
 				<input
@@ -57,7 +57,7 @@ const FormContact = () => {
 					className={errors.phone && 'error'}
 					{...register('phone', validateForm('phone'))}
 				/>
-				{errors.phone && <p>{messages.phone}</p>}
+				{errors.phone && <p className='error-msg'>{messages.phone}</p>}
 
 				<label htmlFor='message'>Message</label>
 				<textarea
@@ -70,7 +70,7 @@ const FormContact = () => {
 						message: messages.message,
 					})}
 				/>
-				{errors.message && <p>{messages.message}</p>}
+				{errors.message && <p className='error-msg'>{messages.message}</p>}
 
 				<input
 					type='submit'

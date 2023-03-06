@@ -54,11 +54,11 @@ input:focus, textarea:focus {
 
 /* errors */
 
-p {
+.error-msg {
   color: #bf1650;
   font-size: 14px;
 }
 
-p::before {
+.error-msg::before {
   content: "⚠ ";
 }
