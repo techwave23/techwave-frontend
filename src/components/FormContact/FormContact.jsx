@@ -1,32 +1,19 @@
 import { useForm } from 'react-hook-form';
 import './styles/formContact.css';
-
-const messages = {
-	required: 'This field is required',
-	firstName: 'Wrong format for first name',
-	lastName: 'Wrong format for last name',
-	email: 'Enter a correct email',
-	phone: 'Enter a correct phone number',
-	message: 'Enter at least 4 characters',
-};
-
-const patterns = {
-	firstName: /^[A-Za-z]+$/i,
-	lastName: /^[A-Za-z]+$/i,
-	email:
-		/^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/,
-	phone: /^[0-9]+$/i,
-};
+import { validateForm } from '../../config/validateForm';
+import { messages } from '../../config/configForm';
 
 const FormContact = () => {
 	const {
 		register,
+		reset,
 		handleSubmit,
 		formState: { errors },
 	} = useForm();
 
 	const onSubmit = contactInfo => {
 		console.log(contactInfo);
+		reset();
 	};
 
 	return (
@@ -38,16 +25,7 @@ const FormContact = () => {
 					name='firstName'
 					type='text'
 					className={errors.firstName && 'error'}
-					{...register('firstName', {
-						required: messages.required,
-						minLength: {
-							value: 4,
-						},
-						pattern: {
-							value: patterns.firstName,
-							message: messages.firstName,
-						},
-					})}
+					{...register('firstName', validateForm('firstName'))}
 				/>
 				{errors.firstName && <p>{messages.firstName}</p>}
 
@@ -57,16 +35,7 @@ const FormContact = () => {
 					name='lastName'
 					type='text'
 					className={errors.lastName && 'error'}
-					{...register('lastName', {
-						required: messages.required,
-						minLength: {
-							value: 4,
-						},
-						pattern: {
-							value: patterns.lastName,
-							message: messages.lastName,
-						},
-					})}
+					{...register('lastName', validateForm('lastName'))}
 				/>
 				{errors.lastName && <p>{messages.lastName}</p>}
 
@@ -76,13 +45,7 @@ const FormContact = () => {
 					name='email'
 					type='email'
 					className={errors.email && 'error'}
-					{...register('email', {
-						required: messages.required,
-						pattern: {
-							value: patterns.email,
-							message: messages.email,
-						},
-					})}
+					{...register('email', validateForm('email'))}
 				/>
 				{errors.email && <p>{messages.email}</p>}
 
@@ -92,21 +55,7 @@ const FormContact = () => {
 					name='phone'
 					type='tel'
 					className={errors.phone && 'error'}
-					{...register('phone', {
-						required: messages.required,
-						minLength: {
-							value: 9,
-							message: messages.phone,
-						},
-						maxLength: {
-							value: 10,
-							message: messages.phone,
-						},
-						pattern: {
-							value: patterns.phone,
-							message: messages.phone,
-						},
-					})}
+					{...register('phone', validateForm('phone'))}
 				/>
 				{errors.phone && <p>{messages.phone}</p>}
 
@@ -118,14 +67,7 @@ const FormContact = () => {
 					className={errors.message && 'error'}
 					{...register('message', {
 						required: messages.required,
-						minLength: {
-							value: 4,
-							message: messages.message,
-						},
-						maxLength: {
-							value: 100,
-							message: messages.message,
-						},
+						message: messages.message,
 					})}
 				/>
 				{errors.message && <p>{messages.message}</p>}
