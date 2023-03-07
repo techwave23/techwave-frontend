@@ -1,6 +1,6 @@
 import { useForm } from 'react-hook-form';
 import './styles/formContact.css';
-import { validateForm } from '../../config/validateForm';
+import { validateForm, messageSend } from '../../config/validateForm';
 import { messages } from '../../config/configForm';
 
 const FormContact = () => {
@@ -13,6 +13,7 @@ const FormContact = () => {
 
 	const onSubmit = contactInfo => {
 		console.log(contactInfo);
+		messageSend(contactInfo);
 		reset();
 	};
 
