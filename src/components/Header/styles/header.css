@@ -1,10 +1,9 @@
 header {
-    background-color: var(--backround), 0.8;
+    background-color: var(--backround);
     display: grid;
    grid-template-columns: 2fr 1fr;
     align-items: center;
     padding: 26px;
-    backdrop-filter: blur(2px);
     position: sticky;
     top: 0px;
    
