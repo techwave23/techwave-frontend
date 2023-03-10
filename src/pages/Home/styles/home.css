@@ -1,14 +1,21 @@
+.container {
+    padding: 0px 50px;
+}
+
+
 .introduction {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    padding: 150px 55px;
-    background-image: url('./assets/background.svg');
+    margin: auto;
+    padding: 12em 0px;
+    background-image: url('./assets/background-opacity.svg');
     background-position: center; 
     background-repeat: no-repeat; 
-    background-size: auto;
+    background-size: cover;
     background-attachment: fixed; 
+    
 }
 
 .introduction-text {
@@ -20,4 +27,13 @@
 }
 .introduction-text p{
    color: var(--gray);
+}
+
+.highlights-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+   flex-wrap: wrap;
+ justify-content: center;
+    gap: 20px;
+
 }

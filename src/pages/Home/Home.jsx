@@ -1,5 +1,6 @@
 import React from 'react';
-import background from '/assets/background.svg';
+import Highlight from './components/Highlight/Highlight';
+import { highlights } from './utilities/highlights';
 import './styles/home.css';
 
 const Home = () => {
@@ -7,13 +8,14 @@ const Home = () => {
 		<div className='container'>
 			<div className='introduction'>
 				<div className='introduction-text'>
-					<h1>Bring your code, we'll handle the rest.</h1>
-					<p>
-						Made for any language, for projects big and small. Railway is the
-						cloud that takes the complexity out of shipping software.
-					</p>
+					<h1>Diseño de websites increíbles para tu marca</h1>
 					<button className='button-hightlight'>Start a New Project</button>
 				</div>
+			</div>
+			<div className='highlights-container'>
+				{highlights.map(highlight => (
+					<Highlight highlight={highlight} key={highlight.id} />
+				))}
 			</div>
 		</div>
 	);
