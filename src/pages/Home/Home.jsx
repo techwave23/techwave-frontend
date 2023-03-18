@@ -17,9 +17,11 @@ const Home = () => {
 				<p className='descriptions'>{texts.ourWorks.description}</p>
 			</div>
 			<div className='management-container'>
-				<h1 className='titles'>{texts.management.title}</h1>
-				<p className='descriptions'>{texts.management.description}</p>
-				<button className='button-primary'>Contact us</button>
+				<div className='management-container-description'>
+					<h1 className='titles'>{texts.management.title}</h1>
+					<p className='descriptions'>{texts.management.description}</p>
+					<button className='button-primary'>Contact us</button>
+				</div>
 			</div>
 			<div className='technologies-container'>
 				<h1 className='titles'>{texts.technologies.title}</h1>
