@@ -2,10 +2,27 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: var(--separation) auto; 
+    gap: var(--m);
 }
 .management-container-description {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    justify-content: center;
     gap: var(--m);
+    min-width: 500px;
 }
+.cms-image {
+    height: 400px;
+    position: relative;
+    right: -5vw;
+
+    filter: drop-shadow(80mm 0mm 100px #803cff67 );
+}
+
+/* display: flex;
+gap: var(--m);
+
+/*   left: -30%; 
+
+z-index: -1;
