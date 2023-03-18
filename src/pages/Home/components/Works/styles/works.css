@@ -5,4 +5,22 @@
     text-align: center;
     margin: var(--separation) auto; 
 }
-
+.top-photo-container {
+    display: flex;
+    gap: var(--m);
+    position: relative;
+    left: 20vw;
+    z-index: -1;
+}
+.botton-photo-container{
+    display: flex;
+    gap: var(--m);
+    position: relative;
+/*   left: -30%; */
+    left: -20vw;
+    z-index: -1;
+}
+.work-photo {
+    height: 250px;
+    border-radius: var(--m);
+}
