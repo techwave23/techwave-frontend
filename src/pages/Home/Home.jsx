@@ -30,6 +30,20 @@ const Home = () => {
 			<div className='clients-container'>
 				<h1 className='titles'>{texts.clients.title}</h1>
 				<p className='descriptions'>{texts.clients.description}</p>
+				<div className='box-container'>
+					<div className='box'>
+						<h6>Title</h6>
+						<p>Description</p>
+					</div>
+					<div className='box'>
+						<h6>Title</h6>
+						<p>Description</p>
+					</div>
+					<div className='box'>
+						<h6>Title</h6>
+						<p>Description</p>
+					</div>
+				</div>
 			</div>
 		</div>
 	);

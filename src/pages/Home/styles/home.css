@@ -61,3 +61,23 @@
     align-items: flex-start;
     gap: var(--m);
 }
+
+.clients-container{
+    display: flex;
+    flex-direction: column;
+    gap: var(--m);
+    margin: var(--separation) auto; 
+}
+.box{
+  padding: 25px;
+  border: 2px solid var(--primary);
+}
+.box:hover{
+    cursor: pointer;
+  box-shadow: 5px 5px 0px 0px var(--primary);
+}
+.box-container{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
