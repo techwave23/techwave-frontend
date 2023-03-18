@@ -4,7 +4,7 @@
     align-items: center;
     justify-content: center;
     gap: 20px;
-    padding: calc(100vh / 2 - 250px) 0px;
+    padding: 150px 0px;
 }
 
 .presentation-title {
