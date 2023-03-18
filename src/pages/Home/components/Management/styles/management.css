@@ -1,0 +1,11 @@
+.management-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: var(--separation) auto; 
+}
+.management-container-description {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--m);
+}

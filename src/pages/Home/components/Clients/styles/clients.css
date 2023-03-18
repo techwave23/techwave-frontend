@@ -1,0 +1,38 @@
+.clients-container{
+    display: flex;
+    flex-direction: column;
+    gap: var(--m);
+    margin: var(--separation) auto; 
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    gap: var(--m);
+    padding: 25px;
+    border: 2px solid var(--primary);
+   
+}
+.box:hover{
+    cursor: pointer;
+    box-shadow: 5px 5px 0px 0px var(--primary);
+}
+.box-container{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.box-header{
+    display: flex;
+    align-items: center;
+    gap: var(--sm);
+
+}
+
+.box-logo {
+    height: var(--l);
+    border-radius: 50%;
+}
+.box-description {
+    color: var(--secondary);
+    line-height: 166.5%;
+}

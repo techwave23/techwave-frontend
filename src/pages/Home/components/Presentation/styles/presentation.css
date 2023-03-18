@@ -1,0 +1,24 @@
+.presentation-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: calc(100vh / 2 - 250px) 0px;
+}
+
+.presentation-title {
+    font-weight: 700;
+    font-size: 67px;
+
+    text-align: center;
+}
+.presentation-description {
+    color: var(--secondary);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 161,8%;
+    text-align: center;
+    }
+
