@@ -2,6 +2,9 @@ import React from 'react';
 import { texts } from '../../utilities/texts';
 import cms from '../../../../../public/assets/photos/cms.jpg';
 import './styles/management.css';
+
+//Tengo que mejorar el tema de estilos !!
+
 export const Management = () => {
 	return (
 		<div className='management-container'>
