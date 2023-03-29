@@ -1,4 +1,4 @@
-import React from 'react';
+import { Link } from 'react-router-dom';
 import { texts } from '../../utilities/texts';
 import './styles/presentation.css';
 
@@ -9,7 +9,9 @@ export const Presentation = () => {
 			<p className='presentation-description'>
 				{texts.presentation.description}
 			</p>
-			<button className='button-ternary'>Contact us</button>
+			<Link to='/contact'>
+				<button className='button-ternary'>Contact us</button>
+			</Link>
 		</div>
 	);
 };
