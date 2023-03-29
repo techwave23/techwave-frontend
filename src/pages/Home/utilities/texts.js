@@ -26,4 +26,9 @@ export const texts = {
 			"Whether you're a small startup or a large corporation, Techwave has the expertise to develop a custom web solution that fits your budget and timeline. We believe in providing transparent pricing and timely delivery of projects.",
 		logos: [],
 	},
+	contact: {
+		title: 'Contact Us',
+		description:
+			"Whether you're a small startup or a large corporation, Techwave has the expertise to develop a custom web solution that fits your budget and timeline. We believe in providing transparent pricing and timely delivery of projects.",
+	},
 };

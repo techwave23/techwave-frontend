@@ -20,51 +20,32 @@ const FormContact = () => {
 	return (
 		<div className='form-container'>
 			<form className='form' onSubmit={handleSubmit(onSubmit)}>
-				<label htmlFor='firstName'>First Name</label>
 				<input
-					id='firstName'
-					name='firstName'
+					id='name'
+					name='name'
+					placeholder='Name'
 					type='text'
-					className={errors.firstName && 'error'}
-					{...register('firstName', validateForm('firstName'))}
+					className={errors.name && 'error'}
+					{...register('name', validateForm('name'))}
 				/>
-				{errors.firstName && <p className='error-msg'>{messages.firstName}</p>}
+				{errors.name && <p className='error-msg'>{messages.name}</p>}
 
-				<label htmlFor='lastName'>Last Name</label>
-				<input
-					id='lastName'
-					name='lastName'
-					type='text'
-					className={errors.lastName && 'error'}
-					{...register('lastName', validateForm('lastName'))}
-				/>
-				{errors.lastName && <p className='error-msg'>{messages.lastName}</p>}
-
-				<label htmlFor='email'>Email</label>
 				<input
 					id='email'
 					name='email'
+					placeholder='Email'
 					type='email'
 					className={errors.email && 'error'}
 					{...register('email', validateForm('email'))}
 				/>
 				{errors.email && <p className='error-msg'>{messages.email}</p>}
 
-				<label htmlFor='phone'>Phone</label>
-				<input
-					id='phone'
-					name='phone'
-					type='tel'
-					className={errors.phone && 'error'}
-					{...register('phone', validateForm('phone'))}
-				/>
-				{errors.phone && <p className='error-msg'>{messages.phone}</p>}
-
-				<label htmlFor='message'>Message</label>
 				<textarea
 					id='message'
 					name='message'
+					placeholder='Message'
 					type='text'
+					rows={8}
 					className={errors.message && 'error'}
 					{...register('message', {
 						required: messages.required,
@@ -72,12 +53,7 @@ const FormContact = () => {
 					})}
 				/>
 				{errors.message && <p className='error-msg'>{messages.message}</p>}
-
-				<input
-					type='submit'
-					value='Send Message'
-					className='button-hightlight'
-				/>
+				<button className='button-primary'>Send</button>
 			</form>
 		</div>
 	);
