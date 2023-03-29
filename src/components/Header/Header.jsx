@@ -6,7 +6,9 @@ import logo from '/assets/logo-header.svg';
 const Header = () => {
 	return (
 		<header>
-			<img src={logo} draggable='false' alt='logo' className='header-logo' />
+			<NavLink to='/'>
+				<img src={logo} draggable='false' alt='logo' className='header-logo' />
+			</NavLink>
 
 			<nav className='nav-container'>
 				<NavLink to='/' className='nav-link'>

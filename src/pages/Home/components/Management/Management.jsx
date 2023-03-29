@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { texts } from '../../utilities/texts';
 import cms from '../../../../../public/assets/photos/cms.jpg';
 import './styles/management.css';
@@ -11,9 +11,9 @@ export const Management = () => {
 			<div className='management-container-description'>
 				<h1 className='titles'>{texts.management.title}</h1>
 				<p className='descriptions'>{texts.management.description}</p>
-				<Link to='/contact'>
+				<NavLink to='/contact'>
 					<button className='button-primary'>Contact us</button>
-				</Link>
+				</NavLink>
 			</div>
 			<img className='cms-image' src={cms} alt='cms' />
 		</div>
